@@ -28,6 +28,7 @@ public class ImagesDownloader {
 
         if (TextUtils.isEmpty(imageUrl)) {
             Toast.makeText(context, "Please enter post URL.", Toast.LENGTH_SHORT).show();
+            Log.e("InstaImagesError", "provided string is empty");
         } else {
 
             if (imageUrl.contains("?utm_source=ig_web_copy_link")) {
@@ -74,7 +75,7 @@ public class ImagesDownloader {
             }, new Response.ErrorListener() {
                 @Override
                 public void onErrorResponse(VolleyError error) {
-                    Log.d("myapp", "Something went wrong" + error.getMessage());
+                    Log.e("InstaImagesError", "Something went wrong" + error);
                     Toast.makeText(context, "Something went wrong", Toast.LENGTH_SHORT).show();
 
                 }
