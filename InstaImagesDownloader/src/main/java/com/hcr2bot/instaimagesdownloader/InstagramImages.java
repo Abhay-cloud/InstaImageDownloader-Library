@@ -16,9 +16,9 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class ImagesDownloader {
+public class InstagramImages {
 
-    public static void getImageUrl(Context context, String imageUrl) {
+    public static void downloadImage(Context context, String imageUrl) {
         String image;
         String[] finalImageUrl = new String[1];
 
