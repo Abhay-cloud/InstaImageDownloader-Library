@@ -25,7 +25,7 @@ Step 2. Add the dependency
 
 ```bash
 dependencies {
-	        implementation 'com.github.Abhay-cloud:InstaImageDownloader-Library:0.1.2'
+	        implementation 'com.github.Abhay-cloud:InstaImageDownloader-Library:0.1.3'
 	}
 ```
     
@@ -54,7 +54,7 @@ if (Build.VERSION.SDK_INT >= 23) {
 
 ## Usage
 ```java
-ImagesDownloader.getImageUrl(Context, Post URL)
+InstagramImages.downloadImage(Context, Post URL)
 ```
 
 You are free to contribute here. This is first version. I'll add more awesome updates in near future.
