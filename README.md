@@ -3,7 +3,7 @@
 
 An easy to use library for directly download images from instagram posts.
 
-
+[![JitPack](https://jitpack.io/v/Abhay-cloud/InstaImageDownloader-Library.svg)](https://jitpack.io/#Abhay-cloud/InstaImageDownloader-Library)
 
 
 ## Implementation
