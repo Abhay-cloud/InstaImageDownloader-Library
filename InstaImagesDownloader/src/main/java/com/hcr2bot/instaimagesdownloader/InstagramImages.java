@@ -37,7 +37,14 @@ public class InstagramImages {
             } else if (imageUrl.contains("?utm_source=ig_web_button_share_sheet")) {
                 String partToRemove = "?utm_source=ig_web_button_share_sheet";
                 image = imageUrl.replace(partToRemove, "");
-            } else {
+            } else if (imageUrl.contains("?utm_medium=share_sheet")) {
+                String partToRemove = "?utm_medium=share_sheet";
+                image = imageUrl.replace(partToRemove, "");
+            } else if (imageUrl.contains("?utm_medium=copy_link")) {
+                String partToRemove = "?utm_medium=copy_link";
+                image = imageUrl.replace(partToRemove, "");
+            }
+            else {
                 image = imageUrl;
             }
 
